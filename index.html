@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="logo">
+       <img src="/imagens/logo-alura.png" alt="logo da alura">
+    </header>
+    <main class="container">
+        <section class="container__input">
+            <div class="vazio"><textarea class="text-area" cols="41" rows="4" placeholder="Digite seu texto"></textarea></div>                       
+            <div class="container__input__botoes">
+                <div class="observacao">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <p class="observavao__paragrafo"><strong>Apenas letras minúsculas e sem acento</strong></p>  
+                </div>            
+                <div class="botoes">
+                    <button id="cript" onclick="btnEncriptar()" class="btn-criptografar">Criptografar</button>
+                    <button id="descript" onclick="btnDescriptografar()" class="btn-descriptografar">Descriptografar</button>
+                </div>
+            </div>            
+        </section>
+        <section class="container__output" >
+            <div container__output__imagem>            
+                <img class="imagem" src="/imagens/boneco.png" alt="Nenhuma mensagem encontrada" disp>
+                <h2 class="h2">Nenhuma mensagem <br>encontrada</h2>
+                <p class="paragrafo">Digite um texto que você deseja <br> criptografar ou descriptografar.</p>
+            </div>
+            <div class="container__output__mensagem">
+                <textarea class="mensagem"   cols="20" rows="10"></textarea>            
+                <button class="btn-criptografar-copiar" onclick="copiar()">Copiar</button>  
+            </div>
+        </section>
+    </main>   
+    <script src="app.js" defer></script>
+</body> 
+</html>
